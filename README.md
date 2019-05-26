@@ -8,3 +8,4 @@
 ### 打包时
 + index.js里面 删除 ReactDOM.render
 + Test.js使用正确的module.exports
++ Test.js使用正确的module.exports

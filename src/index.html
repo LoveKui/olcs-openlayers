@@ -4,24 +4,22 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ThirdParty</title>
+    <title>olcs-openlayers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <div id="root"></div>
+    <div id="root">
+		<div id="map">
+			
+		</div>
+	</div>
 </body>
-<script src="./dist/olcs/olcs.js"></script>
+<script src="./olcs.js"></script>
  <script>
 	 var bb= new olcs.default.initMap("http://t0.tianditu.com/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=8b2299a9524a2d5fc0e70776b8591ea8");
 	 bb.initMap();
 	 var aa=new olcs.default.test(2,5);
 	 aa.toString();
-	 
-	 var aa1=new olcs.default.test(2,5);
-	 aa1.toString();
-	 
-	 var aa2=new olcs.default.test(2,5);
-	 aa2.toString();
  </script>
 </html>

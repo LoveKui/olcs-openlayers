@@ -4,7 +4,13 @@ import TileLayer from 'ol/layer/Tile';
 import XYZ from 'ol/source/XYZ';
 
 
+/**
+ * 初始化地图
+ */
 class initMap{
+	/**
+	 * @param {Object} 天地图地址
+	 */
 	constructor(url) {
 	  this.url = url;
 	  
@@ -18,11 +24,13 @@ class initMap{
 		      source: new XYZ({
 		        url:this.url
 		      })
-		    })
+		    })			
 		  ],
+			controls: [],
 		  view: new View({
 		    center: [0, 0],
-		    zoom: 2
+		    zoom: 2,
+				
 		  })
 		});
 	}
@@ -30,5 +38,8 @@ class initMap{
 }
 
 export  default  initMap
+
+
+
 	
 
